@@ -18,6 +18,12 @@ export default function Checkout() {
     userProgressCtx.hideCheckOut();
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    const fd = new FormData(event.target);
+    const customerData = Object.fromEntries(fd.entries());
+  }
+
   return (
     <Modal open={userProgressCtx.progress === "checkout"} onClose={handleClose}>
       <form>
