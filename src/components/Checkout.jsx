@@ -15,7 +15,7 @@ export default function Checkout() {
   );
 
   function handleClose() {
-    userProgressCtx.handleClose();
+    userProgressCtx.hideCheckOut();
   }
 
   return (
