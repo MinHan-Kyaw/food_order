@@ -249,6 +249,25 @@ h1 {
   background-color: rgba(0, 0, 0, 0.55);
 }
 
+.error {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 50px auto; /* Centers the element horizontally */
+  text-align: center; /* Centers the text within the element */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.error h2 {
+  margin: 0 0 10px 0;
+}
+
+.error p {
+  margin: 0;
+}
+
 @keyframes fade-slide-up {
   from {
     opacity: 0;
